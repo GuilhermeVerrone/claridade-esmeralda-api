@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const AtendimentoSchema = new mongoose.Schema({
   // Adiciona uma referência ao usuário que criou o atendimento
   user: {
-    type: Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: 'users', // Refere-se à coleção 'users'
     required: true
   },
